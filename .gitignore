@@ -1,6 +1,9 @@
 .vscode/
+<<<<<<< HEAD
 data/*
 deep_sort_pytorch/deep_sort/deep/checkpoint/ckpt.t7
 yolov5n.pt
 yolov5s.pt
 yolov5
+=======
+>>>>>>> 5336c022a72ef7456bc94a37f6c29836cad1bebc

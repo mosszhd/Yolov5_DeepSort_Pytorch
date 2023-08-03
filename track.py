@@ -12,8 +12,13 @@ sys.path.insert(0, './yolov5')
 from yolov5.models.experimental import attempt_load
 from yolov5.utils.downloads import attempt_download
 from yolov5.models.common import DetectMultiBackend
+<<<<<<< HEAD
 from yolov5.utils.dataloaders import LoadImages, LoadStreams
 from yolov5.utils.general import LOGGER, check_img_size, non_max_suppression, scale_boxes, check_imshow, xyxy2xywh
+=======
+from yolov5.utils.datasets import LoadImages, LoadStreams
+from yolov5.utils.general import LOGGER, check_img_size, non_max_suppression, scale_coords, check_imshow, xyxy2xywh
+>>>>>>> 5336c022a72ef7456bc94a37f6c29836cad1bebc
 from yolov5.utils.torch_utils import select_device, time_sync
 from yolov5.utils.plots import Annotator, colors
 from deep_sort_pytorch.utils.parser import get_config
@@ -133,7 +138,11 @@ def detect(opt):
 
             if det is not None and len(det):
                 # Rescale boxes from img_size to im0 size
+<<<<<<< HEAD
                 det[:, :4] = scale_boxes(
+=======
+                det[:, :4] = scale_coords(
+>>>>>>> 5336c022a72ef7456bc94a37f6c29836cad1bebc
                     img.shape[2:], det[:, :4], im0.shape).round()
 
                 # Print results
