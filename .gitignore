@@ -1,0 +1,6 @@
+.vscode/
+data/*
+deep_sort_pytorch/deep_sort/deep/checkpoint/ckpt.t7
+yolov5n.pt
+yolov5s.pt
+yolov5
